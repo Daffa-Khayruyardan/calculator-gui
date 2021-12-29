@@ -22,6 +22,31 @@ public class Component {
     private JButton one, two, three, plus;
     private JButton zero, dot, equals;
 
+    public void calculateNumber() {
+        switch(calcIt) {
+            // addition process
+            case 1:
+                resultNumber = enterNumber + Double.parseDouble(display.getText());
+                display.setText(Double.toString(resultNumber));
+            break;
+
+            case 2:
+                resultNumber = enterNumber - Double.parseDouble(display.getText());
+                display.setText(Double.toString(resultNumber));
+            break;
+
+            case 3:
+                resultNumber = enterNumber * Double.parseDouble(display.getText());
+                display.setText(Double.toString(resultNumber));
+            break;
+
+            case 4:
+                resultNumber = enterNumber / Double.parseDouble(display.getText());
+                display.setText(Double.toString(resultNumber));
+            break;
+        }
+    }
+
     public JPanel calcPanel() {
         // declare main panel for app
         mainPanel = new JPanel();
@@ -154,25 +179,25 @@ public class Component {
 
         plus.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                display.setText(display.getText() + "+");
+                
             }
         });
 
         minus.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                display.setText(display.getText() + "-");
+                
             }
         });
 
         multiple.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                display.setText(display.getText() + "*");
+                
             }
         });
 
         divide.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                display.setText(display.getText() + "/");
+                
             }
         });
 
