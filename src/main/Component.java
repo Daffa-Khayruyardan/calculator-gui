@@ -179,7 +179,14 @@ public class Component {
 
         plus.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                
+                // convert string to double data type
+                enterNumber = Double.parseDouble(display.getText());
+
+                // to make switch case running
+                calcIt = 1;
+
+                // set text into display
+                display.setText(enterNumber + "+");
             }
         });
 
@@ -198,6 +205,12 @@ public class Component {
         divide.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 
+            }
+        });
+
+        equals.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                calculateNumber();
             }
         });
 
