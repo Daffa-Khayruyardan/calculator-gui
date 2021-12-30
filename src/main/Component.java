@@ -16,6 +16,8 @@ public class Component {
     // init components here
     private JTextField display;
 
+    private JLabel previousNumber;
+
     private JButton clear, delete, divide, percent;
     private JButton seven, eight, nine, multiple;
     private JButton four, five, six, minus;
@@ -59,6 +61,9 @@ public class Component {
 
         // declare some components here
         display = new JTextField();
+
+        // declare some label here
+        previousNumber = new JLabel();
 
         // set editable text field
         display.setEditable(false);
@@ -186,7 +191,10 @@ public class Component {
                 calcIt = 1;
 
                 // set text into display
-                display.setText(enterNumber + "+");
+                display.setText("");
+
+                // set label previous number
+                previousNumber.setText(enterNumber + "+");
             }
         });
 
@@ -222,140 +230,148 @@ public class Component {
         gbc.gridheight = 1;
         gbc.gridwidth = 4;
         gbc.gridx = 0;
-        gbc.gridy = 0;
+        gbc.gridy = 1;
         mainPanel.add(display,gbc);
+
+        // add previousNumber label 
+        gbc.ipady = 10;
+        gbc.gridheight = 1;
+        gbc.gridwidth = 4;
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        mainPanel.add(previousNumber,gbc);
 
         // add clear
         gbc.gridheight = 1;
         gbc.gridwidth = 1;
         gbc.gridx = 0;
-        gbc.gridy = 1;
+        gbc.gridy = 2;
         mainPanel.add(clear,gbc);
 
         // add delete
         gbc.gridheight = 1;
         gbc.gridwidth = 1;
         gbc.gridx = 1;
-        gbc.gridy = 1;
+        gbc.gridy = 2;
         mainPanel.add(delete,gbc);
 
         // add percent
         gbc.gridheight = 1;
         gbc.gridwidth = 1;
         gbc.gridx = 2;
-        gbc.gridy = 1;
+        gbc.gridy = 2;
         mainPanel.add(percent,gbc);
 
         // add square
         gbc.gridheight = 1;
         gbc.gridwidth = 1;
         gbc.gridx = 3;
-        gbc.gridy = 1;
+        gbc.gridy = 2;
         mainPanel.add(divide,gbc);
 
         // add seven
         gbc.gridheight = 1;
         gbc.gridwidth = 1;
         gbc.gridx = 0;
-        gbc.gridy = 2;
+        gbc.gridy = 3;
         mainPanel.add(seven,gbc);
 
         // add eight
         gbc.gridheight = 1;
         gbc.gridwidth = 1;
         gbc.gridx = 1;
-        gbc.gridy = 2;
+        gbc.gridy = 3;
         mainPanel.add(eight,gbc);
 
         // add nine
         gbc.gridheight = 1;
         gbc.gridwidth = 1;
         gbc.gridx = 2;
-        gbc.gridy = 2;
+        gbc.gridy = 3;
         mainPanel.add(nine,gbc);
 
         // add multiple
         gbc.gridheight = 1;
         gbc.gridwidth = 1;
         gbc.gridx = 3;
-        gbc.gridy = 2;
+        gbc.gridy = 3;
         mainPanel.add(multiple,gbc);
 
         // add four
         gbc.gridheight = 1;
         gbc.gridwidth = 1;
         gbc.gridx = 0;
-        gbc.gridy = 3;
+        gbc.gridy = 4;
         mainPanel.add(four,gbc);
 
         // add five
         gbc.gridheight = 1;
         gbc.gridwidth = 1;
         gbc.gridx = 1;
-        gbc.gridy = 3;
+        gbc.gridy = 4;
         mainPanel.add(five,gbc);
 
         // add six
         gbc.gridheight = 1;
         gbc.gridwidth = 1;
         gbc.gridx = 2;
-        gbc.gridy = 3;
+        gbc.gridy = 4;
         mainPanel.add(six,gbc);
 
         // add minus
         gbc.gridheight = 1;
         gbc.gridwidth = 1;
         gbc.gridx = 3;
-        gbc.gridy = 3;
+        gbc.gridy = 4;
         mainPanel.add(minus,gbc);
 
         // add one
         gbc.gridheight = 1;
         gbc.gridwidth = 1;
         gbc.gridx = 0;
-        gbc.gridy = 4;
+        gbc.gridy = 5;
         mainPanel.add(one,gbc);
 
         // add two
         gbc.gridheight = 1;
         gbc.gridwidth = 1;
         gbc.gridx = 1;
-        gbc.gridy = 4;
+        gbc.gridy = 5;
         mainPanel.add(two,gbc);
 
         // add three
         gbc.gridheight = 1;
         gbc.gridwidth = 1;
         gbc.gridx = 2;
-        gbc.gridy = 4;
+        gbc.gridy = 5;
         mainPanel.add(three,gbc);
 
         // add plus
         gbc.gridheight = 1;
         gbc.gridwidth = 1;
         gbc.gridx = 3;
-        gbc.gridy = 4;
+        gbc.gridy = 5;
         mainPanel.add(plus,gbc);
 
         // add zero
         gbc.gridheight = 1;
         gbc.gridwidth = 1;
         gbc.gridx = 0;
-        gbc.gridy = 5;
+        gbc.gridy = 6;
         mainPanel.add(zero,gbc);
 
         // add dot
         gbc.gridheight = 1;
         gbc.gridwidth = 1;
         gbc.gridx = 1;
-        gbc.gridy = 5;
+        gbc.gridy = 6;
         mainPanel.add(dot,gbc);
 
         // add equals
         gbc.gridheight = 1;
         gbc.gridwidth = 2;
         gbc.gridx = 2;
-        gbc.gridy = 5;
+        gbc.gridy = 6;
         mainPanel.add(equals,gbc);
 
         return mainPanel;
