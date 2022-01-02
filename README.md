@@ -9,13 +9,25 @@
 
 <br>
 
-## features
+## Features
 - <font size="3">Basic math operator</font>
 - <font size="3">Resizeable window</font>
 - <font size="3">Add previous number on top</font>
 - <font size="3">Decimal number support in calculator</font>
 
-
-## requirement
+## Requirement
 - <font size="3">Windows 7 and above</font>
 - <font size="3">Java JDK runtime 8 and above</font>
+
+## Usage
+<font size="4">Windows OS</font>
+```
+> run bat
+```
+<font size="4">Mac OS or Linux</font>
+```
+$ run.sh
+```
+
+## Note 
+<font size="3">You can use compiled jar file calculator gui application, check releases binary file.</font>
