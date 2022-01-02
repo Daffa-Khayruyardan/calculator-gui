@@ -46,6 +46,11 @@ public class Component {
                 resultNumber = enterNumber / Double.parseDouble(display.getText());
                 display.setText(Double.toString(resultNumber));
             break;
+
+            case 5:
+                resultNumber = enterNumber % Double.parseDouble(display.getText());
+                display.setText(Double.toString(resultNumber));
+            break;
         }
     }
 
@@ -97,6 +102,7 @@ public class Component {
         clear.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 display.setText("");
+                previousNumber.setText("");
             }
         });
 
@@ -200,19 +206,65 @@ public class Component {
 
         minus.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                
+                // convert string to double data type
+                enterNumber = Double.parseDouble(display.getText());
+
+                // to make switch case running
+                calcIt = 2;
+
+                // set text into display
+                display.setText("");
+
+                // set label previous number
+                previousNumber.setText(enterNumber + "+");
             }
         });
 
         multiple.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                
+                // convert string to double data type
+                enterNumber = Double.parseDouble(display.getText());
+
+                // to make switch case running
+                calcIt = 3;
+
+                // set text into display
+                display.setText("");
+
+                // set label previous number
+                previousNumber.setText(enterNumber + "+");
             }
         });
 
         divide.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                
+                // convert string to double data type
+                enterNumber = Double.parseDouble(display.getText());
+
+                // to make switch case running
+                calcIt = 4;
+
+                // set text into display
+                display.setText("");
+
+                // set label previous number
+                previousNumber.setText(enterNumber + "+");
+            }
+        });
+
+        percent.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                // convert string to double data type
+                enterNumber = Double.parseDouble(display.getText());
+
+                // to make switch case running
+                calcIt = 5;
+
+                // set text into display
+                display.setText("");
+
+                // set label previous number
+                previousNumber.setText(enterNumber + "%");
             }
         });
 
