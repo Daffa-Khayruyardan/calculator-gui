@@ -15,7 +15,6 @@
 - <font size="3">Add previous number on top</font>
 - <font size="3">Decimal number support in calculator</font>
 
-<br>
 
 ## requirement
 - <font size="3">Windows 7 and above</font>
