@@ -10,7 +10,6 @@
 <br>
 
 ## features
------------------------
 - <font size="3">Basic math operator</font>
 - <font size="3">Resizeable window</font>
 - <font size="3">Add previous number on top</font>
@@ -19,6 +18,5 @@
 <br>
 
 ## requirement
------------------------------------------
 - <font size="3">Windows 7 and above</font>
 - <font size="3">Java JDK runtime 8 and above</font>
