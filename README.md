@@ -1,1 +1,1 @@
-![Logo Image](https://github.com/H4Ik3n90/calculator-gui/assets/logo.png)
+![Logo Image](https://github.com/H4Ik3n90/calculator-gui/tree/default/assets/logo.png)
