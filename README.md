@@ -28,6 +28,3 @@
 ```
 $ run.sh
 ```
-
-## Note 
-<font size="3">You can use compiled jar file calculator gui application, check releases binary file.</font>
